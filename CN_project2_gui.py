@@ -1,0 +1,98 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'CN_project2_gui.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(566, 600)
+        MainWindow.setMinimumSize(QtCore.QSize(566, 600))
+        MainWindow.setMaximumSize(QtCore.QSize(566, 600))
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setMinimumSize(QtCore.QSize(566, 549))
+        self.centralwidget.setMaximumSize(QtCore.QSize(566, 549))
+        self.centralwidget.setObjectName("centralwidget")
+        self.layoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.layoutWidget.setGeometry(QtCore.QRect(0, 0, 561, 541))
+        self.layoutWidget.setObjectName("layoutWidget")
+        self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.layoutWidget)
+        self.verticalLayout_6.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_6.setObjectName("verticalLayout_6")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.ipLabel = QtWidgets.QLabel(self.layoutWidget)
+        self.ipLabel.setObjectName("ipLabel")
+        self.verticalLayout_2.addWidget(self.ipLabel)
+        self.ipLine = QtWidgets.QLineEdit(self.layoutWidget)
+        self.ipLine.setObjectName("ipLine")
+        self.verticalLayout_2.addWidget(self.ipLine)
+        self.verticalLayout_6.addLayout(self.verticalLayout_2)
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.portLabel = QtWidgets.QLabel(self.layoutWidget)
+        self.portLabel.setObjectName("portLabel")
+        self.verticalLayout_3.addWidget(self.portLabel)
+        self.portLine = QtWidgets.QLineEdit(self.layoutWidget)
+        self.portLine.setObjectName("portLine")
+        self.verticalLayout_3.addWidget(self.portLine)
+        self.verticalLayout_6.addLayout(self.verticalLayout_3)
+        self.verticalLayout_4 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_4.setObjectName("verticalLayout_4")
+        self.desLabel = QtWidgets.QLabel(self.layoutWidget)
+        self.desLabel.setObjectName("desLabel")
+        self.verticalLayout_4.addWidget(self.desLabel)
+        self.desLine = QtWidgets.QLineEdit(self.layoutWidget)
+        self.desLine.setObjectName("desLine")
+        self.verticalLayout_4.addWidget(self.desLine)
+        self.verticalLayout_6.addLayout(self.verticalLayout_4)
+        self.verticalLayout_5 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_5.setObjectName("verticalLayout_5")
+        self.srcLabel = QtWidgets.QLabel(self.layoutWidget)
+        self.srcLabel.setObjectName("srcLabel")
+        self.verticalLayout_5.addWidget(self.srcLabel)
+        self.srcLine = QtWidgets.QLineEdit(self.layoutWidget)
+        self.srcLine.setObjectName("srcLine")
+        self.verticalLayout_5.addWidget(self.srcLine)
+        self.verticalLayout_6.addLayout(self.verticalLayout_5)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.startButton = QtWidgets.QPushButton(self.layoutWidget)
+        self.startButton.setObjectName("startButton")
+        self.horizontalLayout.addWidget(self.startButton)
+        self.progressBar = QtWidgets.QProgressBar(self.layoutWidget)
+        self.progressBar.setProperty("value", 0)
+        self.progressBar.setObjectName("progressBar")
+        self.horizontalLayout.addWidget(self.progressBar)
+        self.textBrowser = QtWidgets.QTextBrowser(self.layoutWidget)
+        self.textBrowser.setMaximumSize(QtCore.QSize(256, 16777215))
+        self.textBrowser.setObjectName("textBrowser")
+        self.horizontalLayout.addWidget(self.textBrowser)
+        self.verticalLayout_6.addLayout(self.horizontalLayout)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 566, 26))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "客户端"))
+        self.ipLabel.setText(_translate("MainWindow", "IP地址"))
+        self.portLabel.setText(_translate("MainWindow", "端口号"))
+        self.desLabel.setText(_translate("MainWindow", "目的文件夹地址"))
+        self.srcLabel.setText(_translate("MainWindow", "源文件夹地址"))
+        self.startButton.setText(_translate("MainWindow", "开始传输"))
